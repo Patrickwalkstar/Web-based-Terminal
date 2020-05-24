@@ -1,0 +1,25 @@
+{
+  "name": "patrickwalkstar.github.io",
+  "version": "1.0.0",
+  "description": "Patrickwalkstar's personal website",
+  "main": "js/cli.js",
+  "scripts": {
+    "dev": "http-server -o",
+    "format": "prettier --write 'src/*.js'",
+    "lint": "prettier --check 'src/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patrickwalkstar/Patrickwalsktar.github.io.git"
+  },
+  "author": "Patrick Lee Walker <pwalker@sandiego.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Patrickwalkstar/Patrickwalkstar.github.io/issues"
+  },
+  "homepage": "https://github.com/codebytere/Patrickwalkstar.github.io#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "prettier": "^2.0.2"
+  }
+}
