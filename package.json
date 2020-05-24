@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Patrickwalkstar/Patrickwalkstar.github.io/issues"
   },
-  "homepage": "https://github.com/codebytere/Patrickwalkstar.github.io#readme",
+  "homepage": "https://github.com/Patrickwalkstar/Patrickwalkstar.github.io#readme",
   "devDependencies": {
     "http-server": "^0.12.1",
     "prettier": "^2.0.2"
