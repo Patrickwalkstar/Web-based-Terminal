@@ -96,7 +96,7 @@ commands.cd = (newDirectory) => {
 };
 
 // Display contents of specified file.
-commands.cat = (filename) => {
+commands.thisfile = (filename) => {
   if (!filename) return errors.fileNotSpecified;
 
   const isADirectory = (filename) => struct.hasOwnProperty(filename);
