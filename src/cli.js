@@ -6,10 +6,11 @@ const errors = {
   fileNotFound: 'Error: file not found in current directory',
   fileNotSpecified: 'Error: you did not specify a file',
   invalidFile: 'Error: not a valid file',
+  allInfo: 'Click the blue button to see all information!'
 };
 
 const struct = {
-  root: ['about', 'resume', 'contact', 'talks'],
+  root: ['about', 'resume', 'contact'],
   skills: ['proficient', 'familiar'],
 };
 
@@ -35,8 +36,9 @@ const registerMinimizedToggle = () => {
 };
 
 const registerTransformToggle = () => {
-  $('.button.purple').click(() => {
-    $('terminal-window').toggleClass('transformed');
+  $('.button.blue').click(() => {
+    window.open('index2.html',  "_self");
+    $('.terminal-window').toggleClass('transformed');
   });
 };
 
@@ -48,6 +50,9 @@ commands.touch = () => errors.noWriteAccess;
 
 // Remove file from current directory.
 commands.rm = () => errors.noWriteAccess;
+
+//See all of the information regarding this person
+commands.blue = () => errors.allInfo;
 
 // View contents of specified directory.
 commands.ls = (directory) => {
@@ -152,7 +157,7 @@ $(() => {
   pages.push($.get('pages/resume.html'));
   pages.push($.get('pages/root.html'));
   pages.push($.get('pages/skills.html'));
-  
+
   $.when
     .apply($, pages)
     .done(

@@ -1,11 +1,16 @@
 @font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
 
 body {
-  background-color: #211E3A;
+  // background-color: #211E3A;
+  background-color: rgb(10, 10, 10);
 }
 
-p {
-  text-align: center;
+#title{
+  font-family: @font-family;
+  font-size: 11pt;
+  display: inline;
+  text-align: justify;
+  padding-left: 120px;
 }
 
 .terminal-window {
@@ -33,6 +38,11 @@ p {
     left: 0;
   }
 
+  &.transformed {
+    fill-opacity: 0;
+
+  }
+
   header {
     background: #e0e8f0;
     height: 30px;
@@ -47,6 +57,8 @@ p {
       border-radius: 8px;
     }
 
+
+
     .button.green {
       background: #3bb662;
       cursor: pointer;
@@ -59,10 +71,12 @@ p {
 
     .button.red {
       background: #e75448;
+      cursor: pointer;
     }
 
-    .button.purple {
-      background-color: rgb(78, 25, 120);
+    .button.blue {
+      background-color: rgba(74, 137, 245, 0.8);
+      cursor: pointer;
     }
   }
 
