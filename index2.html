@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Resume">
+    <meta name="author" content="Patrick Lee Walker">
+    <link rel="stylesheet/less" type="text/css" href="styles/main2.less"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.4.3/js/jquery.terminal.js"></script>
+    <script type="text/javascript" src="src/shell.js"></script>
+    <script type="text/javascript" src="src/cli.js"></script>
+    <link rel="icon" href="/Images/PW.png" type="image/png">
+  </head>
+
+<title>PWALKS</title>
+
+<body>
+    <header id="homepage-header">
+        <img src="/Images/me.jpg" alt="My profile picture" width="15%" style="max-width: 300px" id="profile-pic"><br>
+        <nav class="a">
+            <a href="index.html">Home</a>
+            <a href="Portfolio/portfolio.html">My Portfolio</a>
+            <a href="Adventures/Interests.html">Interests</a>
+            <a href="Contact/contact.html">Contact Me</a>
+        </nav>
+        <div>
+            <h1 id="name">Patrick Lee Walker | Patrickwalkstar</h1>
+            <h3 id="title">Personal Portfolio</h3>
+        </div>
+
+    </header>
+
+    <section style="clear: both" id="educationSection">
+        <h2><u>Education</u></h2>
+        <!--TODO: Add modals to bring up more information about my schooling such as GPA, graduation date, etc... -->
+        <!-- <img src="Images/USD_logo.png" alt="" width = "50" class="logo-label"> -->
+      <p><br><br><br><br>
+        <div id="school1">
+        <img src="/Images/USD_SM.png" alt="" width="5%" style="min-width: 70px" class="logo-label"><br>
+            <strong>University of San Diego, Shiley-Marcos School of Engineering
+            <br>B.S. in Computer Science<br></strong>
+
+        </div>
+        <div id="school2">
+        <img src="/Images/USD_SE.jpg" alt="" width = "5%" style="min-width: 70px" class="logo-label"><br>
+            <strong>University of San Diego, College of Arts and Sciences<br>
+            B.A. in Mathematics<br>
+            <em>Minor in Theology & Religious Studies</em></strong>
+
+        </div>
+        <div>
+            <h3 id="coursework"><u>Relevant Coursework:</u></h3>
+
+            <ul class="coursework-list-computers"><strong style="font-size: 14pt">Computer Science:</strong>
+                <li>Senior Project I & II</li>
+                <li>Algorithms</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems Design</li>
+                <li>Object-Oriented Design</li>
+                <li>Computer Graphics</li>
+                <li>Web Development</li>
+                <li>Intro to Computer Systems</li>
+                <li>Operating Systems</li>
+                <li>Computer Programming I & II</li>
+            </ul>
+            <ul class="coursework-list-math"><strong style="font-size: 14pt">Mathematics:</strong>
+                <li>Linear Algebra</li>
+                <li>Probability</li>
+                <li>Mathematical Statistics</li>
+                <li>Applied Probability and Statistics</li>
+                <li>Calculus I - III</li>
+                <li>Topology</li>
+                <li>Real Analysis</li>
+                <li>Logic for Math & Comp. Science</li>
+                <li>Theory of Numbers</li>
+                <li>Mathematics Problem Solving Seminar</li>
+                <li>History of Mathematics</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="skillsSection">
+
+        <h2 id="skillstitle"><u>Skills</u></h2><br><br><br><br>
+        <!--skills table separating skills by familiarity-->
+        <table>
+            <tr>
+                <th></th>
+                <th class="border1">Proficient</th>
+                <th class="border1">Intermediate</th>
+                <th class="border1">Beginner</th>
+            </tr>
+            <tr>
+                <th class="border4">Programming Skills</th>
+                <td class="border2">
+                    <ul class="proficientSkills">
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>C</li>
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="intermediateSkills">
+                        <li>Python</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="beginnerSkills">
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="border4">Web Development Skills</th>
+                <td class="border2">
+                    <ul class="proficientSkills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>MySQL</li>
+
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="intermediateSkills">
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="beginnerSkills">
+                        <li>Bootstrap</li>
+                        <li>Node.JS</li>
+                        <li>NoSQL/JSON</li>
+                        <li>PHP</li>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="border4">Design/Project Dev Skills</th>
+                <td class="border2">
+                    <ul class="proficientSkills">
+                        <li>Object-Oriented Design</li>
+                        <li>Wire-framing</li>
+                        <li>UML Diagramming</li>
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="intermediateSkills">
+                        <li>Project Management Tools</li>
+                        <li>Statistical Modeling</li>
+                        <li>Data/Procedural Abstraction</li>
+                        <li>Timeline Development</li>
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="beginnerSkills">
+                        <li>AGILE Software Development</li>
+                        <li>Waterfall Software Development</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="border4">Software Skills</th>
+                <td class="border2">
+                    <ul class="proficientSkills">
+                        <li>Microsoft Office</li>
+                        <li>G Suite</li>
+                        <li>ClickUp and GitHub</li>
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="intermediateSkills">
+                        <li>Git</li>
+
+                    </ul>
+                </td>
+                <td class="border2">
+                    <ul class="beginnerSkills">
+                      <li>Tableau</li>
+                      <li>Azure</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="border4">Other Skills</th>
+                <td class="border3">
+                    <ul class="proficientSkills">
+                        <li>Written Communication</li>
+                        <li>Time Management</li>
+                        <li>Critical Analysis</li>
+                        <li>Organization</li>
+                    </ul>
+                </td>
+                <td class="border3">
+                    <ul class="intermediateSkills">
+                        <li>Teamwork and Coordination</li>
+                        <li>Project Management</li>
+                    </ul>
+                </td>
+                <td class="border3">
+                    <ul class="beginnerSkills">
+                      <li>Public Speaking</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <h2 id="experiencetitle"><u>Experience</u></h2>
+    <section id="experienceSection"><br><br><br><br>
+
+      <h2 id="experienceEngineering"> Engineering & Software Development </h2><br><br><br><br>
+        <h3>Software Engineering Intern, <a href="https://www.echo-markets.com">Echo Markets</a></h3>
+        <div>
+            <ul>
+                <li>Develop components and implement error handling for a React-based web application</li>
+                <li>Write tests and detailed documentation for a custom REST API</li>
+                <li>Perform experiments to aid in data collection and debugging of advanced embedded software</li>
+                <li>Design and 3D-print prototype housings for custom electronic components</li>
+            </ul>
+        </div>
+        <h3>Chair of Student Organizations and Involvement, University of San Diego AS</h3>
+        <div>
+            <ul>
+                <li>Represent the interests of the student body in an elected position</li>
+                <li>Chair the Student Organizations Committee and serve on Academic Integrity Council</li>
+                <li>Serve on the AS Finance Committee</li>
+                <li>Mediate issues between student organizations and campus administrators</li>
+            </ul>
+        </div>
+      <h2 id="experienceExtracurriculars">Extracurricular Activities</h2><br><br><br><br><br><br>
+        <h3>Front-end Development Intern, Keylitic</h3>
+        <div>
+            <ul>
+                <li>Helped with the front-end development of a React-Based web marketing tool</li>
+                <li>Collaborated on key design decisions and on product definition</li>
+                <li>Researched and helped to implement various third party integrations through the use of APIs</li>
+            </ul>
+        </div>
+        <h3>Setup and Audio Technician, Daversa Enterprises</h3>
+        <div>
+            <ul>
+                <li>Set up, operate, and troubleshoot audio systems including recording equipment</li>
+                <li>Coordinate logistics and setup of outdoor weddings</li>
+            </ul>
+        </div>
+        <h3>Shift Lead, RUST General Store</h3>
+        <div>
+            <ul>
+                <li>Acted as server, barista, cook, cashier and busser</li>
+                <li>Developed company culture, trained and supervised other employees</li>
+                <li>Maintained a circa-1860's character and educated customers on local San Diego history</li>
+            </ul>
+        </div>
+        <h3>Head Coach, East County Volleyball Club</h3>
+        <div>
+            <ul>
+                <li>Taught me leadership, versatility, multi-tasking, administration, and the ability to foster an inclusive and productive environment</li>
+                <li>One of several coaching positions I have held over the course of several years</li>
+            </ul>
+        </div>
+        <h3>Academic Tutor, Los Gatos High School</h3>
+        <div>
+            <ul>
+                <li>Tutored students in a wide range of subjects, including Physics, Math, and English</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy Patrick Lee Walker 2020</p>
+        <nav class="b">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">My Portfolio</a>
+            <a href="Interests.html">Interests</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </footer>
+</body>
+</html>

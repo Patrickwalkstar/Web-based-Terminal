@@ -1,0 +1,375 @@
+* {
+
+    /* Immaculata Blue */
+    /*color: #0074c8; */
+    // outline: 1px solid red !important;
+    /* Founder's Blue */
+    color: #003b70;
+    background-color: marshmallow; //closet mix (an off-white)
+    font-family: 'Montserrat', Arial;
+
+    /* Animation to have page fade-in */
+    animation: fade-in 0.4s ease-out;
+}
+
+hr {
+    clear: both;
+}
+
+/* TODO: think about whether I want other header types to have text shadow */
+h1 {
+    text-shadow: 2px 2px lightgrey;
+
+}
+
+h2{
+  float: left;
+}
+
+h1#name{
+  text-align: center;
+  margin-right: 500px;
+  margin-left: 500px;
+  margin-top: 55px;
+  padding: 10px 0px 10px 0px;
+  background-color: lightblue;
+  border-radius: 20px;
+  text-shadow: 2px 2px lightgrey;
+  border: 5px solid #003b70;
+  min-width: 450px;
+
+}
+
+h2#experiencetitle {
+float: left;
+margin-left: 25px;
+
+}
+
+h2#skillstitle {
+float: left;
+margin-right: 60px;
+margin-bottom: 20px;
+}
+
+h2#experienceEngineering{
+  float: left;
+  text-align: center;
+  margin: 0px 30px 30px 30px;
+  background-color: lightblue;
+  border-radius: 20px;
+  text-shadow: 2px 2px lightgrey;
+  padding: 10px 10px 10px 10px;
+  border: 5px solid #003b70;
+
+}
+h2#experienceExtracurriculars{
+  float: left;
+  text-align: center;
+  margin: 30px 30px 30px 30px;
+  text-shadow: 2px 2px lightgrey;
+  padding: 10px 100px 10px 100px;
+  background-color: salmon;
+  border-radius: 20px;
+  border: 5px solid #003b70;
+}
+
+h3#title {
+  text-align: center;
+  font-size: 24pt;
+  margin-right: 500px;
+  margin-left: 500px;
+  text-shadow: 2px 2px lightgrey;
+  padding: 10px 0px 10px 0px;
+  background-color: salmon;
+  border-radius: 20px;
+  border: 5px solid #003b70;
+  min-width: 450px;
+}
+
+
+nav.a{
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+    vertical-align: bottom;
+    float: center;
+    text-align: center;
+    min-width: 475px;
+}
+
+nav.b{
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size: 14pt;
+    float: center;
+    text-align: center;
+}
+
+a{
+  margin: 0 2vw 0 0;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 20pt;
+
+  &:before {
+    content: "" ;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #003b70;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: all 0.3s;
+  }
+
+
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+#experienceSection{
+  margin: 0px 0px 0px 25px;
+}
+
+
+@keyframes fade-in {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+footer {
+    font-size: 14pt;
+    clear: both;
+    text-align: center;
+}
+
+body {
+    background-color: eggshell;
+
+}
+
+section {
+    margin-left: 15px;
+}
+
+#topics2e{
+  text-align: center;
+  float:center;
+}
+
+#homepage-header {
+    height: 10%;
+
+}
+
+#educationSection {
+    height: 20%;
+}
+
+#skillsSection {
+    height: 70%;
+    margin: 10px 0px 20px 25px;
+
+}
+
+
+#profile-pic {
+    float: left;
+    border-radius: 20px;
+    border-color: #003b70;
+    border-width: 5px;
+    margin: 50px 0px 20px 110px;
+    border-style: solid;
+    min-width: 200px;
+}
+
+
+div#school1{
+  float: center;
+  text-align: center;
+  vertical-align:middle;
+  border-radius: 20px;
+  padding: 5px 5px 30px 0px;
+  margin: 0px 1020px 10px 10px;
+  border: 5px solid #003b70;
+  font-size: 14pt;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  min-width: 735px;
+}
+
+div#school1:hover{
+margin: 0px 400px 10px 10px;
+padding: 5px 5px 60px 0px;
+transition: 0.5s ease-in-out 0.25s;
+-webkit-transition: 0.5s ease-in-out 0.25s;
+}
+
+
+
+
+
+div#school2{
+  float: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  padding: 5px 5px 25px 0px;
+  margin: 0px 1020px 10px 10px;
+  border: 5px solid #003b70;
+  font-size: 14pt;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  min-width: 735px;
+
+}
+
+div#school2:hover{
+margin: 0px 400px 10px 10px;
+padding: 5px 5px 60px 0px;
+transition: 0.5s ease-in-out 0.25s;
+-webkit-transition: 0.5s ease-in-out 0.25s;
+}
+
+.logo-label {
+    float: left;
+    margin: 5px 15px 10px 50px;
+}
+
+.coursework-list-math {
+    columns: 3;
+    float: center;
+    border-radius: 20px;
+    padding: 5px 5px 5px 50px;
+    margin-right: 400px;
+    border: 5px solid #003b70;
+    min-width: 750px;
+}
+
+.coursework-list-computers{
+    columns: 3;
+    float: center;
+    border-radius: 20px;
+    padding: 5px 5px 5px 50px;
+    margin-right: 400px;
+    border: 5px solid #003b70;
+    min-width: 750px;
+}
+
+
+.coursework-list li:hover {
+    font-size: 14pt;
+    color: #0074c8;
+    transition: 0.5s ease-in-out 0.25s;
+    -webkit-transition: 0.5s ease-in-out 0.25s;
+}
+.coursework-list li {
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+.proficientSkills li:hover {
+    background-color: rgba(114, 140, 31, 0.6);
+    color: #0074c8;
+    transition: 0.5s ease-in-out 0.25s;
+    -webkit-transition: 0.5s ease-in-out 0.25s;
+}
+.proficientSkills li {
+
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.intermediateSkills li:hover {
+    background-color: rgba(238, 170, 43, 0.8);
+    color: #0074c8;
+    transition: 0.5s ease-in-out 0.25s;
+    -webkit-transition: 0.5s ease-in-out 0.25s;
+}
+.intermediateSkills li {
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+.beginnerSkills li:hover {
+    background-color: rgba(184, 82, 25, 0.6);
+    color: #0074c8;
+    transition: 0.5s ease-in-out 0.25s;
+    -webkit-transition: 0.5s ease-in-out 0.25s;
+}
+.beginnerSkills li {
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+#experienceSection h3:hover {
+    font-size: 15pt;
+    color: #0074c8;
+    transition: 0.5s ease-in-out 0.25s;
+    -webkit-transition: 0.5s ease-in-out 0.25s;
+}
+
+#experienceSection h3 {
+    color: #003b70;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+/* Contact.html specific rules */
+#contactFields {
+    margin-left: 10px;
+    alignment: center;
+}
+
+.border1{
+    border: 3px solid #003b70;
+    border-radius: 20px;
+    background-color: salmon;
+    // border-bottom:0px;
+}
+.border2{
+    border: 1px dashed #003b70;
+    border-radius: 20px;
+    padding: 0px 20px 0px 0px;
+    // border-bottom:0px;
+    // border-top:0px;
+}
+.border3{
+    border: 1px dashed #003b70;
+    // border-top:0px;
+    border-radius: 20px;
+}
+
+.border4{
+
+  border: 3px solid #003b70;
+  border-radius: 20px;
+  background-color: lightblue;
+  min-width: 100px;
+  // border-right: 0px;
+}
+
+table{
+
+    border-collapse: separate;
+
+}
+
+
+@font-face {
+font-family: 'Montserrat';
+src: url('/styles/Montserrat-Medium.ttf');
+}
+//
+// div, header, section, body{
+//     outline: 1px solid red !important;
+// }
