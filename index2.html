@@ -19,34 +19,34 @@
     <header id="homepage-header">
         <img src="/Images/me.jpg" alt="My profile picture" width="15%" style="max-width: 300px" id="profile-pic"><br>
         <nav class="a">
-            <a href="index.html">Home</a>
-            <a href="Portfolio/portfolio.html">My Portfolio</a>
-            <a href="Adventures/Interests.html">Interests</a>
-            <a href="Contact/contact.html">Contact Me</a>
+            <a href="index.html" id="top">Home</a>
+            <a href="Portfolio/portfolio.html" id="top">My Portfolio</a>
+            <a href="Adventures/Interests.html" id="top">Interests</a>
+            <a href="Contact/contact.html" id="top">Contact Me</a>
         </nav>
         <div>
-            <h1 id="name">Patrick Lee Walker | Patrickwalkstar</h1>
             <h3 id="title">Personal Portfolio</h3>
+            <h1 id="name">Patrick Lee Walker | Patrickwalkstar</h1>
         </div>
 
     </header>
 
     <section style="clear: both" id="educationSection">
         <h2><u>Education</u></h2>
-        <!--TODO: Add modals to bring up more information about my schooling such as GPA, graduation date, etc... -->
-        <!-- <img src="Images/USD_logo.png" alt="" width = "50" class="logo-label"> -->
       <p><br><br><br><br>
         <div id="school1">
         <img src="/Images/USD_SM.png" alt="" width="5%" style="min-width: 70px" class="logo-label"><br>
             <strong>University of San Diego, Shiley-Marcos School of Engineering
             <br>B.S. in Computer Science<br></strong>
-
         </div>
+
+
         <div id="school2">
         <img src="/Images/USD_SE.jpg" alt="" width = "5%" style="min-width: 70px" class="logo-label"><br>
             <strong>University of San Diego, College of Arts and Sciences<br>
             B.A. in Mathematics<br>
             <em>Minor in Theology & Religious Studies</em></strong>
+
 
         </div>
         <div>
@@ -219,27 +219,17 @@
     <h2 id="experiencetitle"><u>Experience</u></h2>
     <section id="experienceSection"><br><br><br><br>
 
-      <h2 id="experienceEngineering"> Engineering & Software Development </h2><br><br><br><br>
-        <h3>Software Engineering Intern, <a href="https://www.echo-markets.com">Echo Markets</a></h3>
+      <h2 id="experienceEngineering" class="btn shiny">Engineering & Software Development </h2><br><br><br><br>
+        <h3 id="subset">Software Engineering Intern, <a href="https://www.echo-markets.com" id="echoMarkets">Echo Markets</a></h3>
         <div>
             <ul>
-                <li>Develop components and implement error handling for a React-based web application</li>
-                <li>Write tests and detailed documentation for a custom REST API</li>
-                <li>Perform experiments to aid in data collection and debugging of advanced embedded software</li>
-                <li>Design and 3D-print prototype housings for custom electronic components</li>
+                <li style="max-width: 53%">Apply business and software experience to build a commission-free,
+                  social, stock trading application. Learn and implement technologies
+                  like Django and front-end technologies like Bootstrap, CSS and HTML.</li>
             </ul>
         </div>
-        <h3>Chair of Student Organizations and Involvement, University of San Diego AS</h3>
-        <div>
-            <ul>
-                <li>Represent the interests of the student body in an elected position</li>
-                <li>Chair the Student Organizations Committee and serve on Academic Integrity Council</li>
-                <li>Serve on the AS Finance Committee</li>
-                <li>Mediate issues between student organizations and campus administrators</li>
-            </ul>
-        </div>
-      <h2 id="experienceExtracurriculars">Extracurricular Activities</h2><br><br><br><br><br><br>
-        <h3>Front-end Development Intern, Keylitic</h3>
+      <h2 id="experienceExtracurriculars" class="btn shiny">Extracurricular Activities</h2><br><br><br><br><br><br>
+        <h3 id="subsetJob">Competitor (Regionals), International Collegiate Programming Competition</h3>
         <div>
             <ul>
                 <li>Helped with the front-end development of a React-Based web marketing tool</li>
@@ -247,34 +237,30 @@
                 <li>Researched and helped to implement various third party integrations through the use of APIs</li>
             </ul>
         </div>
-        <h3>Setup and Audio Technician, Daversa Enterprises</h3>
+        <h3 id="subsetJob"style="max-width: 65%">Successful Participant, the C.O.M.A.P.'s
+          (Consortium for Mathematics and Its Applications)
+          Mathematical/Interdisciplinary Contest in Modeling</h3>
         <div>
             <ul>
-                <li>Set up, operate, and troubleshoot audio systems including recording equipment</li>
-                <li>Coordinate logistics and setup of outdoor weddings</li>
+                <li><p style="max-width: 65%">An international contest designed to provide
+                  undergraduate students with the opportunity to work as team members to
+                  engage in and improve their modeling, problem solving, and writing skills.
+                  Teams apply mathematics to model, develop, and communicate a solution to a
+                  real-world problem.</p></li>
+                <li><p style="max-width: 65%">Collaborated with a team to find the best, basal structure
+                  for a sandcastle on a beach. Our team's work could be applied to studies on the
+                  structural integrity of foundations of sandcastles and other structures.</p></li>
+                <li><a href='data/mathmodelingcompetition.pdf' id="competitionReport">Our Competition Report</a></li>
             </ul>
         </div>
-        <h3>Shift Lead, RUST General Store</h3>
+        <h3 id="subsetJob"style="max-width: 65%">Currently Updating!</h3>
         <div>
             <ul>
-                <li>Acted as server, barista, cook, cashier and busser</li>
-                <li>Developed company culture, trained and supervised other employees</li>
-                <li>Maintained a circa-1860's character and educated customers on local San Diego history</li>
+                <li><p style="max-width: 65%">More Extracurricular Experience to add.</li>
+
             </ul>
         </div>
-        <h3>Head Coach, East County Volleyball Club</h3>
-        <div>
-            <ul>
-                <li>Taught me leadership, versatility, multi-tasking, administration, and the ability to foster an inclusive and productive environment</li>
-                <li>One of several coaching positions I have held over the course of several years</li>
-            </ul>
-        </div>
-        <h3>Academic Tutor, Los Gatos High School</h3>
-        <div>
-            <ul>
-                <li>Tutored students in a wide range of subjects, including Physics, Math, and English</li>
-            </ul>
-        </div>
+
     </section>
 
     <hr>
@@ -284,7 +270,7 @@
         <nav class="b">
             <a href="index.html">Home</a>
             <a href="portfolio.html">My Portfolio</a>
-            <a href="Interests.html">Interests</a>
+            <a href="interests.html">Interests</a>
             <a href="contact.html">Contact Me</a>
         </nav>
     </footer>

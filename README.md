@@ -9,6 +9,5 @@ There is an option to see all details from the  `cli `in a separate personal pro
 ---
 Files and TIes:
 
-[index.html ]---[main.less] ---> {shell.js & cli.js}
+[index.html ]---[main.less] ---> {shell.js & cli.js}  
 [index2.html ]---[main2.less] ---> {certain funcitons in the cli.js file}
-
