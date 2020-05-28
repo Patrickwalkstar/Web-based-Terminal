@@ -2,7 +2,7 @@
   "name": "patrickwalkstar.github.io",
   "version": "1.0.0",
   "description": "Patrickwalkstar's personal website",
-  "main": "js/cli.js",
+  "main": "src/cli.js",
   "scripts": {
     "dev": "http-server -o",
     "format": "prettier --write 'src/*.js'",

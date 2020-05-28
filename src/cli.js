@@ -6,11 +6,12 @@ const errors = {
   fileNotFound: 'Error: file not found in current directory',
   fileNotSpecified: 'Error: you did not specify a file',
   invalidFile: 'Error: not a valid file',
+  allInfo: 'Click the blue button to see all information!'
 };
 
 const struct = {
-  root: ['about', 'resume', 'contact', 'talks'],
-  skills: ['proficient', 'familiar'],
+  root: ['about', 'resume', 'contact'],
+  skills: ['proficient', 'intermediate', 'beginner'],
 };
 
 const commands = {};
@@ -35,10 +36,19 @@ const registerMinimizedToggle = () => {
 };
 
 const registerTransformToggle = () => {
-  $('.button.purple').click(() => {
-    $('terminal-window').toggleClass('transformed');
+  $('.button.blue').click(() => {
+    window.open('index2.html',  "_self");
+    $('.terminal-window').toggleClass('transformed');
   });
 };
+
+const fullProfile = () => {
+  $('h3.profile').click(() => {
+    window.open('index2.html',  "_self");
+    $('.terminal-window').toggleClass('transformed');
+  });
+};
+
 
 // Create new directory in current directory.
 commands.mkdir = () => errors.noWriteAccess;
@@ -48,6 +58,9 @@ commands.touch = () => errors.noWriteAccess;
 
 // Remove file from current directory.
 commands.rm = () => errors.noWriteAccess;
+
+//See all of the information regarding this person
+commands.blue = () => errors.allInfo;
 
 // View contents of specified directory.
 commands.ls = (directory) => {
@@ -139,28 +152,31 @@ $(() => {
   registerFullscreenToggle();
   registerMinimizedToggle();
   registerTransformToggle();
+  fullProfile();
 
   const cmd = document.getElementById('terminal');
 
   $.ajaxSetup({ cache: false });
   const pages = [];
   pages.push($.get('pages/about.html'));
+  pages.push($.get('pages/beginner.html'));
   pages.push($.get('pages/contact.html'));
-  pages.push($.get('pages/familiar.html'));
   pages.push($.get('pages/help.html'));
+  pages.push($.get('pages/intermediate.html'));
   pages.push($.get('pages/proficient.html'));
   pages.push($.get('pages/resume.html'));
   pages.push($.get('pages/root.html'));
   pages.push($.get('pages/skills.html'));
-  
+
   $.when
     .apply($, pages)
     .done(
       (
         aboutData,
+        beginnerData,
         contactData,
-        familiarData,
         helpData,
+        intermediateData,
         proficientData,
         resumeData,
         rootData,
@@ -168,9 +184,10 @@ $(() => {
         talksData,
       ) => {
         systemData['about'] = aboutData[0];
+        systemData['beginner'] = beginnerData[0];
         systemData['contact'] = contactData[0];
-        systemData['familiar'] = familiarData[0];
         systemData['help'] = helpData[0];
+        systemData['intermediate'] = intermediateData[0];
         systemData['proficient'] = proficientData[0];
         systemData['resume'] = resumeData[0];
         systemData['root'] = rootData[0];
