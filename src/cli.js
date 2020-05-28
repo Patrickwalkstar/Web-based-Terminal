@@ -11,7 +11,7 @@ const errors = {
 
 const struct = {
   root: ['about', 'resume', 'contact'],
-  skills: ['proficient', 'familiar'],
+  skills: ['proficient', 'intermediate', 'beginner'],
 };
 
 const commands = {};
@@ -41,6 +41,14 @@ const registerTransformToggle = () => {
     $('.terminal-window').toggleClass('transformed');
   });
 };
+
+const fullProfile = () => {
+  $('h3.profile').click(() => {
+    window.open('index2.html',  "_self");
+    $('.terminal-window').toggleClass('transformed');
+  });
+};
+
 
 // Create new directory in current directory.
 commands.mkdir = () => errors.noWriteAccess;
@@ -144,15 +152,17 @@ $(() => {
   registerFullscreenToggle();
   registerMinimizedToggle();
   registerTransformToggle();
+  fullProfile();
 
   const cmd = document.getElementById('terminal');
 
   $.ajaxSetup({ cache: false });
   const pages = [];
   pages.push($.get('pages/about.html'));
+  pages.push($.get('pages/beginner.html'));
   pages.push($.get('pages/contact.html'));
-  pages.push($.get('pages/familiar.html'));
   pages.push($.get('pages/help.html'));
+  pages.push($.get('pages/intermediate.html'));
   pages.push($.get('pages/proficient.html'));
   pages.push($.get('pages/resume.html'));
   pages.push($.get('pages/root.html'));
@@ -163,9 +173,10 @@ $(() => {
     .done(
       (
         aboutData,
+        beginnerData,
         contactData,
-        familiarData,
         helpData,
+        intermediateData,
         proficientData,
         resumeData,
         rootData,
@@ -173,9 +184,10 @@ $(() => {
         talksData,
       ) => {
         systemData['about'] = aboutData[0];
+        systemData['beginner'] = beginnerData[0];
         systemData['contact'] = contactData[0];
-        systemData['familiar'] = familiarData[0];
         systemData['help'] = helpData[0];
+        systemData['intermediate'] = intermediateData[0];
         systemData['proficient'] = proficientData[0];
         systemData['resume'] = resumeData[0];
         systemData['root'] = rootData[0];
