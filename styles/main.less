@@ -46,11 +46,22 @@ body {
 
   }
 
+  .blue_button{
+    width: 40px;
+    height: 12px;
+    margin: 10px 4px 0 0;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: rgba(74, 137, 245, 0.8);
+    cursor: pointer;
+  }
+
   header {
     background: #e0e8f0;
     height: 30px;
     border-radius: 8px 8px 0 0;
     padding-left: 10px;
+
 
     .button {
       width: 12px;
@@ -72,11 +83,6 @@ body {
 
     .button.red {
       background: #e75448;
-      cursor: pointer;
-    }
-
-    .button.blue {
-      background-color: rgba(74, 137, 245, 0.8);
       cursor: pointer;
     }
   }
@@ -160,6 +166,7 @@ body {
   line-height: 0.1px;
   color: white;
   font-family: @font-family;
+  
 
   .site-code {
     font-weight: bold;
@@ -169,11 +176,33 @@ body {
   .profile{
     cursor: pointer;
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    background-color: rgb(40, 40, 40);
-    padding: 13px 5px 13px 5px;
-    margin: 0px 830px 0px 830px;
+
+    padding-bottom: 10px;
+    // border: 2px solid rgba(255, 255, 255, 0.5);
+    // background-color: rgb(40, 40, 40);
+    // padding: 13px 5px 13px 5px;
+    // margin: 0px 830px 0px 830px;
     font-size: 13pt;
+
+    &:before {
+      content: "" ;
+      position: absolute;
+      width: 100%;
+      max-width: 126px;
+      height: 2px;
+      bottom: 62;
+      left: width/2;
+      background-color: white;
+      visibility: visible;
+      transform: scaleX(0);
+      transition: all 0.3s;
+    }
+
+
+    &:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
 
   }
 }

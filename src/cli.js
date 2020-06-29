@@ -36,7 +36,7 @@ const registerMinimizedToggle = () => {
 };
 
 const registerTransformToggle = () => {
-  $('.button.blue').click(() => {
+  $('.blue_button').click(() => {
     window.open('index2.html',  "_self");
     $('.terminal-window').toggleClass('transformed');
   });

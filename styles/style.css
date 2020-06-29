@@ -1,0 +1,84 @@
+
+*{
+
+  /* outline: 1px solid red !important; */
+}
+
+
+body{
+  font-family: 'Montserrat', Arial;
+  background: #282828;
+  background: linear-gradient(-0deg, #EE7752, #003b70);
+  background-size: 500% 500%;
+
+}
+
+h1 {
+  font-family: 'Montserrat', Arial;
+  font-weight: lighter;
+  font-size: 60px;
+  color: #fff;
+  padding-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+  position: center;
+
+}
+p {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+
+.media{
+  position: absolute;
+  color: #fff;
+  position: relative;
+  text-align: center;
+
+}
+
+li, a{
+
+  right: 2%;
+  list-style: none;
+  margin: 10px 5px 0px 5px;
+  display: inline-block;
+  font-size: 40px;
+  padding 20px 20px;
+  color: #fff;
+  animation: fade-in 0.5s ease-in;
+  text-align: center;
+  position: relative;
+  transition: 0.5;
+}
+
+li:hover, a:hover{
+  color: lightgrey;
+  /* border: 1px solid lightgrey; */
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@keyframes fade-in {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@font-face {
+font-family: 'Montserrat';
+src: url('/styles/Montserrat-Medium.ttf');
+}
